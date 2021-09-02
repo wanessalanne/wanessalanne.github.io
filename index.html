@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Requisitos específicos:
+    Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+    JavaScript: validações.
+    Css: Estilizar o rodapé usando exclusivamente css.
+    HTML: Utilizar <aside> e <article>
+    Realizar comentário no código linha 4 os requisitos específicos(indice dos requisitos). -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico.png">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Eru mobly</title>
+</head>
+
+
+<body>
+    <!-- HEADER (FRETE - CABEÇALHO - LOGO - MENU ) -->
+    <header class="container-fluid">
+
+        <div class="row">
+            <div class="col-12" id="topo">Frete grátis para todo o Nordeste
+                <img src="img/bx_bxs-truck.svg" id="icon1">
+            </div>
+        </div>
+
+        <!-- COMPONENTES -->
+        <section class="container">
+            <div class="row">
+                <div class="col-2" id="logo-header">
+                    <a href="index.html"><img src="/img/logo2 2.svg" id="logo"></a>
+                </div>
+                <div class="col-4 d-flex align-items-center" id="componentes">
+                    <img class="img-fluid" src="img/garantia.svg" id="icon2">
+                    <p id="txt-header">2 anos de garantia</p>
+                </div>
+                <div class="col-2 d-flex align-items-center" id="componentes">
+                    <a href="#"><img src="img/mapa.svg" id="icon3"></a>
+                    <p id="txt-header2">Visite <br><b><a href="localizacao.html">nossas lojas</a></b></p>
+                </div>
+                <div class="col-2 d-flex align-items-center" id="componentes">
+                    <a href="#"><img src="img/login.svg" id="icon4"></a>
+                    <p id="txt-header3">Faça o login <br><b><a href="form.html">ou cadastre-se</a></b></p>
+                </div>
+                <div class="col-2 d-flex align-items-center" id="componentes">
+                    <a href="#"><img src="img/cart.svg" id="icon5"></a>
+                    <p id="txt-header4"><a href="#">Seu carrinho</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- MENU -->
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                    aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" style="color: white;">Home <span
+                                    class="sr-only">(página
+                                    atual)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Novidades</a>
+                        </li>
+                        <!-- SUBMENU -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="produtos.html" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                                Produtos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #343A40">
+                                <a class="dropdown-item" href="#" style="color: white;">Banheiro</a>
+                                <a class="dropdown-item" href="#" style="color: white;">Cozinha</a>
+                                <a class="dropdown-item" href="#" style="color: white;">Escritório</a>
+                                <a class="dropdown-item" href="#" style="color: white;">Quarto</a>
+                                <a class="dropdown-item" href="#" style="color: white;">Sala</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="produtos.html" style="color: white;">Todos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inspiration.html" style="color: white;">Inspirações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="localizacao.html" style="color: white;">Serviços e atendimento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="color: white;">Sobre nós</a>
+                        </li>
+                    </ul>
+                    <!-- INPUT PESQUISA -->
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
+                            aria-label="Pesquisar">
+                        <button class="btn btn-default btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!-- MAIN (CARROSSEL - PRODUTOS - PROMOÇÕES - ASIDE - BOTAO VOLTAR TOPO) -->
+    <main class="container-fluid">
+        <section class="container">
+            <div class="row">
+                <div class="col-12" id="carroussel">
+                    <div id="carrossel-3" class="carousel slide" data-ride="carousel">
+                        <!-- Indicadores -->
+                        <ol class="carousel-indicators">
+                            <li data-target="carrossel-3" data-slide-to="0"></li>
+                            <li data-target="carrossel-3" data-slide-to="1"></li>
+                            <li data-target="carrossel-3" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Inner -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-fluid" src="img/carrousel1.png" alt="Imagem 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="img/carrousel22.png" alt="Imagem 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="img/carroussel3.png" alt="Imagem 3">
+                            </div>
+                        </div>
+                        <!--  Controles Slider -->
+                        <a href="#carrossel-3" class="carousel-control-prev" data-slide="prev"><span
+                                class="carousel-control-prev-icon" aria-hidden="true"></span></a>
+                        <a href="#carrossel-3" class="carousel-control-next" data-slide="next"><span
+                                class="carousel-control-next-icon" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ROW PRODUTOS EM PROMOÇÃO -->
+        <div class="container">
+            <div class="row">
+                <div class="col-10 align-items-center" id="promo">
+                    <p id="subtitulo">
+                    <h2 class="h4" id="promo-title"><span>P</span>romoções</h2>
+                    </p>
+                    <div class="row">
+                        <div class="col-3 card overflow-auto">
+                            <a href="#" class="thumbnail">
+                                <img src="/img/comoda.jpg" alt="..." id="produtos" class="img-fluid">
+                            </a>
+                            <p id="titulo-produto">Cômoda</p>
+                            <p id="valor-promo">R$ 149,90</p>
+                            <button type="button" class="btn btn-default"
+                                style="color: white; background-color: #55A38C;" id="btn-produto">comprar</button>
+                        </div>
+                        <div class="col-3 card overflow-auto">
+                            <a href="#" class="thumbnail">
+                                <img src="/img/comoda.jpg" alt="..." id="produtos" class="img-fluid">
+                            </a>
+                            <p id="titulo-produto">Cômoda</p>
+                            <p id="valor-promo">R$ 149,90</p>
+                            <button type="button" class="btn btn-default"
+                                style="color: white; background-color: #55A38C;" id="btn-produto">comprar</button>
+                        </div>
+                        <div class="col-3 card overflow-auto">
+                            <a href="#" class="thumbnail">
+                                <img src="/img/comoda.jpg" alt="..." id="produtos" class="img-fluid">
+                            </a>
+                            <p id="titulo-produto">Cômoda</p>
+                            <p id="valor-promo">R$ 149,90</p>
+                            <button type="button" class="btn btn-default"
+                                style="color: white; background-color: #55A38C;" id="btn-produto">comprar</button>
+
+                        </div>
+                        
+
+                        <!-- PRODUTOS - NOVIDADES - 2 -->
+
+
+                    </div>
+                </div>
+                <aside class="col-2">
+                    <img src="img/aside1.svg" id="aside1">
+                </aside>
+            </div>
+
+            <!-- ROW NOVIDADES -->
+            <div class="row">
+                <div class="col-10 align-items-center" id="novidades">
+                    <div class="row">
+                        <div class="col-12">
+                            <p id="subtitulo">
+                            <h2 class="h4" id="novidades-title"><span>N</span>ovidades</h2>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 card overflow-auto">
+                            <a href="#" class="thumbnail">
+                                <img src="/img/comoda.jpg" class="img-fluid" alt="..." id="produtos">
+                            </a>
+                            <p id="titulo-produto">Cômoda</p>
+                            <p id="valor">R$ 169,90</p>
+                            <button type="button" class="btn btn-default"
+                                style="color: white; background-color: #55A38C;" id="btn-produto">comprar</button>
+                        </div>
+                        <div class="col-3 card overflow-auto">
+                            <a href="#" class="thumbnail">
+                                <img src="/img/comoda.jpg" class="img-fluid" alt="..." id="produtos">
+                            </a>
+                            <p id="titulo-produto">Cômoda</p>
+                            <p id="valor">R$ 169,90</p>
+                            <button type="button" class="btn btn-default"
+                                style="color: white; background-color: #55A38C;" id="btn-produto">comprar</button>
+                        </div>
+                        <div class="col-3 card overflow-auto">
+                            <a href="#" class="thumbnail">
+                                <img src="/img/comoda.jpg" class="img-fluid" alt="..." id="produtos">
+                            </a>
+                            <p id="titulo-produto">Cômoda</p>
+                            <p id="valor">R$ 169,90</p>
+                            <button type="button" class="btn btn-default"
+                                style="color: white; background-color: #55A38C;" id="btn-produto">comprar</button>
+
+                        </div>
+                       
+
+                        <!-- PRODUTOS - NOVIDADES - 2 -->
+
+
+                    </div>
+                </div>
+                <aside class="col-2 align-items-center">
+                    <img src="img/aside2.svg" id="aside2">
+                </aside>
+            </div>
+        </div>
+    </main>
+    <!-- Botao WHATSAPP -->
+    <a href="http://api.whatsapp.com/send?phone=5583998555019" target="_blank"><img src="/img/wpp.svg" id="wpp"></a>
+    <!-- Botao Voltar ao Topo -->
+
+    <!-- Botao Voltar ao Topo -->
+    <button id="btn-topo"><a href="#top"><img src="/img/topo.svg"></a></button>
+    <!-- Botao Voltar ao Topo -->
+
+
+    <!-- RODAPÉ (REDES SOCIALS - CONTATO - (FAZER NO CSS) -->
+    <footer>
+        <div class="footer">
+            <div class="redes-sociais">
+                <p id="subtitulo-footer1">Redes Sociais</p><br>
+                <p id="txt-footer1">siga-nos nas nossas redes sociais e fique por dentro de novidades e promoções</p>
+                <br>
+                <a href="https://www.instagram.com/wanessalanne/" target="_blank"><img src="img/insta.svg" class="social-media"></a>
+                <a href="https://twitter.com/wanessalanne" target="_blank"><img src="img/twitter.svg" class="social-media"></a>
+                <a href="https://www.facebook.com/wanessa.lanne" target="_blank"><img src="img/fb.svg" class="social-media"></a>
+            </div>
+            <div class="formas-pagamento">
+                <p id="subtitulo-footer2">Formas de Pagamento</p>
+                <img src="img/formas-pag.png" id="pagamento">
+            </div>
+            <div class="fale-conosco">
+                <p id="subtitulo-footer1">Fale com a gente</p><br>
+                <p id=txt-footer2>(00)12345-6789</p>
+                <p id=txt-footer2>(00)12345-6789</p>
+                <p id="subtitulo-footer3">Horário de atendimento:</p>
+                <p id=txt-footer1>segunda a sexta das 8h às 18h</p>
+
+
+            </div>
+            <div class="copyright">© ERU mobly - 2021. Todos os direitos reservados.</div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="default.js"></script>   
+    
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
